@@ -10,7 +10,7 @@ A struct to represent a user.
 struct User: IDable {
 	
 	enum Gender {
-		case male, female
+		case male, female, unknown
 	}
 	
 	var id: String
