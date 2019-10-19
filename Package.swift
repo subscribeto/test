@@ -7,9 +7,7 @@ let package = Package(
     name: "git-testing",
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
-        .library(
-            name: "git-testing",
-            targets: ["git-testing"]),
+		.executable(name: "git-testing", targets: ["git-testing"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -20,9 +18,6 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "git-testing",
-            dependencies: []),
-        .testTarget(
-            name: "git-testingTests",
-            dependencies: ["git-testing"]),
+            dependencies: [])
     ]
 )
