@@ -8,7 +8,7 @@ A struct to represent a physical place in the world.
 - Version: v0.1.0
 */
 struct Place : IDable {
-	let id: String
-	let name: String
-	let zipCode: Int
+	var id: String
+	var name: String
+	var zipCode: Int
 }

@@ -13,9 +13,9 @@ struct User: IDable {
 		case male, female
 	}
 	
-	let id: String
-	let name: String
-	let age: Int
-	let gender: Gender
+	var id: String
+	var name: String
+	var age: Int
+	var gender: Gender
 	
 }

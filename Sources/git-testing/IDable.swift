@@ -8,5 +8,5 @@ A protocol to require an object has an id.
 - Version: v0.1.0
 */
 protocol IDable {
-	var id: String
+	var id: String { get set }
 }
